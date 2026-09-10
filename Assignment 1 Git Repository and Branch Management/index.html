@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revive | Premium Vintage Furniture</title>
+    <meta name="description" content="Discover beautifully restored vintage and antique furniture. Buy and sell timeless pieces with Revive.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Re<span>vive</span>.</a>
+        <nav>
+            <a href="#collection">Collection</a>
+            <a href="#about">About Us</a>
+            <a href="#sell">Sell to Us</a>
+        </nav>
+        <a href="#collection" class="btn-primary">Shop Now</a>
+    </header>
+
+    <section class="hero">
+        <span class="hero-tag">Curated Vintage Collection</span>
+        <h1>Timeless furniture for modern spaces.</h1>
+        <p>Discover our handpicked collection of restored antique and mid-century furniture. Give your home a soul with pieces that tell a story.</p>
+        <div class="hero-buttons">
+            <a href="#collection" class="btn-primary">Browse Collection</a>
+            <a href="#sell" class="btn-secondary">Sell Your Furniture</a>
+        </div>
+    </section>
+
+    <section id="collection" class="products">
+        <div class="section-header">
+            <h2>Latest Arrivals</h2>
+            <a href="#" class="btn-secondary" style="border: none; padding: 0;">View all items &rarr;</a>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Restored</span>
+                    <img src="images/vintage_armchair_1789025246743.jpg" alt="Vintage Velvet Armchair">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Emerald Velvet Armchair</h3>
+                    <p class="product-desc">Beautifully restored 1960s armchair with rich emerald velvet upholstery and solid walnut frame.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$850</span>
+                        <button class="buy-btn">
+                            Add to Cart
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Antique</span>
+                    <img src="images/antique_dining_table_1789025264513.jpg" alt="Antique Oak Dining Table">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Solid Oak Dining Table</h3>
+                    <p class="product-desc">Late 19th-century rustic oak dining table. Seats 6 comfortably. Exceptional patina and character.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$1,200</span>
+                        <button class="buy-btn">
+                            Add to Cart
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Mid-Century</span>
+                    <img src="images/mid_century_cabinet_1789025283429.jpg" alt="Mid-Century Teak Cabinet">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Teak Sideboard Cabinet</h3>
+                    <p class="product-desc">Sleek authentic mid-century modern teak sideboard with ample storage and sculpted handles.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$1,450</span>
+                        <button class="buy-btn">
+                            Add to Cart
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">Re<span>vive</span>.</a>
+            <p>We are passionate about preserving the beauty and craftsmanship of vintage furniture. Buy unique pieces or sell your old treasures to give them a second life.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Revive Vintage Furniture. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple micro-interaction for buy buttons
+        document.querySelectorAll('.buy-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const originalText = this.innerHTML;
+                this.innerHTML = 'Added to Cart ✓';
+                this.style.color = 'var(--accent-color)';
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                    this.style.color = '';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
