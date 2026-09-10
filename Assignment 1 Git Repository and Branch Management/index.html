@@ -95,6 +95,46 @@
         </div>
     </section>
 
+    <section id="sell" class="sell-section">
+        <div class="sell-container">
+            <div class="sell-content">
+                <h2>Sell Your Vintage Treasures</h2>
+                <p>Have an antique or mid-century piece you'd like to part with? We are always looking for high-quality furniture to restore and rehome. Fill out the form below to get an estimate.</p>
+            </div>
+            <form class="sell-form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+                    <input type="text" id="itemName" name="itemName" placeholder="e.g. Mid-Century Teak Sideboard" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemCondition">Condition</label>
+                    <select id="itemCondition" name="itemCondition" required>
+                        <option value="" disabled selected>Select condition</option>
+                        <option value="excellent">Excellent (Like New)</option>
+                        <option value="good">Good (Minor wear)</option>
+                        <option value="fair">Fair (Needs restoration)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="expectedPrice">Expected Price ($)</label>
+                    <input type="number" id="expectedPrice" name="expectedPrice" placeholder="Enter amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">Description</label>
+                    <textarea id="itemDescription" name="itemDescription" rows="4" placeholder="Tell us about the history, material, and any flaws..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="itemImage" class="file-upload-label">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                        Upload Photos
+                    </label>
+                    <input type="file" id="itemImage" name="itemImage" accept="image/*" multiple required class="file-upload-input">
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Submit for Review</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
             <a href="#" class="logo">Re<span>vive</span>.</a>
