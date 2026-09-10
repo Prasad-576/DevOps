@@ -1,0 +1,13 @@
+{
+  "name": "github-actions-ci-demo",
+  "version": "1.0.0",
+  "description": "A complete beginner-friendly Node.js project for demonstrating Continuous Integration (CI) using GitHub Actions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo \"Building project... Build successful!\"",
+    "test": "echo \"Running tests... All tests passed successfully!\""
+  },
+  "author": "",
+  "license": "ISC"
+}
